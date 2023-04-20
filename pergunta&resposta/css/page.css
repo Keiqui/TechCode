@@ -4,6 +4,10 @@
     font-family: 'font01';
     src: url(04B_30__.TTF)}
 
+    @font-face{
+        font-family: 'font02';
+        src: url(Pixel\ Emulator.otf)}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -170,6 +174,7 @@ body {
      color: #ffffff;
      width: 1000px;
      height: 5px;
+     font-family: 'font02';
   }
 
   @media screen and (max-width: 720px) {
