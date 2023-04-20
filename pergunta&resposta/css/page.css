@@ -18,6 +18,8 @@ body {
 	min-height: 100vh;
 	background: linear-gradient(to bottom, #030324 , #61588b,#030324); /*fiolet*/
 }
+
+
 .container {
     width: 1000px; 
 	display: flex;
@@ -135,7 +137,8 @@ body {
 /* .container .btn:nth-child(3)::after { */
 	/* background: #ff1f71; */
 	/* box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71, */
-		/* 0 0 60px #ff1f71; */ */
+		/* 0 0 60px #ff1f71; */ 
+        
 /* } */
 
 .coluna-esquerda {
