@@ -23,6 +23,9 @@ body {
 	background: linear-gradient(to bottom, #030324 , #61588b,#030324); /*fiolet*/
 }
 
+.swal2-popup {
+	font-size: 2rem;
+	}
 
 .container {
     width: 1000px; 
@@ -154,7 +157,6 @@ body {
     z-index: 1; 
   }
   
-  
   .coluna-direita {
     width: 50%;
     height: 500px;
@@ -169,19 +171,76 @@ body {
 
   .pergunta{
     position: absolute;
-     top: 9rem;
+     top: 6rem;
      left: 18rem;
      font-size:18px;
      color: #ffffff;
+     width: 66%;
+     height: 5px;
+     font-family: 'font02';
+  }
+
+  #respa{
+	position:absolute;
+	color:rgb(243, 204, 190);
+	 top: 12.2rem;
+     left: 18rem;
+     font-size:0.7rem;
      width: 100%;
      height: 5px;
      font-family: 'font02';
+	 width: 60%;
+  }
+
+  #respb{
+    color: rgb(218, 218, 253);
+	top: 2.8rem;
+     left:0.1rem;
+     font-size:0.7rem;
+     width: 100%;
+     height: 5px;
+     font-family: 'font02';
+  }
+   
+  #respc{
+	color: rgb(255, 208, 255);
+	top: 2.8rem;
+     left: 0.1rem;
+     font-size:0.7rem;
+     width: 100%;
+     height: 5px;
+     font-family: 'font02'; 
   }
 
   @media screen and (max-width: 720px) {
     .pergunta{
         width: 380px;
-        left: 3rem;
+        left: 1rem;
+		font-size: 0.6rem;
     }
+
+	#respa{
+		width: 380px;
+        left: 2rem;
+		height: 4rem;
+		font-size: 0.55rem;
+		top: 10rem;
+	}
+
+	#respb{
+		width: 380px;
+        left: 0.1rem;
+		height: 4rem;
+		font-size: 0.55rem;
+		top: 4.1rem;
+	}
+
+	#respc{
+		width: 380px;
+        left: 0.1rem;
+		height: 4rem;
+		font-size: 0.55rem;
+		top:3.3rem;
+	}
   }
   

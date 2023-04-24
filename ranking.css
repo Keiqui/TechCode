@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'fontepixel';
+    src: url(fonte_pixel.TTF);
+  }
+  
+  legend{
+    font-family: 'fontepixel';
+    float: left;
+    position: absolute;
+    float: left;
+    margin-left: 1rem;
+    font-size: 4.5em;
+    top: 4%;
+    color: aliceblue;
+  }
+body{
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 170vh;
+	background: linear-gradient(to bottom, #050c20 , #355aaa); 
+  height: 100%;
+}
+fieldset{
+    color: aliceblue;
+    width: 1000px;
+    height: 200px;
+    margin-top: -10%;
+    border: 2px solid #ddd;
+}
+.ouro{
+  position: absolute;
+    width: 7%;
+    top: 12%;
+    margin-right: 4%;
+}
+.prata{
+  position: absolute;
+  width: 5%;
+  top: 15.5%;
+  margin-right: 29rem;
+}
+.bronze{
+  position: absolute;
+    width: 5.5%;
+    top: 16%;
+    margin-left: 25rem;
+}
+table{
+  position: absolute;
+  top: 35%;
+}
+.trofeu{
+  position: absolute;
+ width: 300px;
+ top: -8%;
+ float: left;
+ padding-right: 63%;
+}
+
+.ganhador1{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 38.5%;
+  border-color: rgb(59, 218, 39);
+  right: 380px;
+  border-radius: 10%;
+}
+
+.ganhador2{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 38.5%;
+  border-color: rgb(59, 218, 39);
+  left: 350px;
+  border-radius: 10%;
+}
+
+.ganhador3{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 37%;
+  border-color: rgb(59, 218, 39);
+  left: 570px;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 720px) {
+	legend{
+	top: 100px;	
+	font-size: 2rem;
+  top: 2%;
+		}
+  .trofeu{
+    width: 130px;
+    top: -3%;
+  }
+  .ouro{
+    width: 50px;
+    top: 7%;
+  }
+  .prata{
+    width: 40px;
+    padding-left: 40%;
+    top: 9%;
+  }
+  .bronze{
+    width: 44px;
+    padding-right: 30%;
+    top: 9.5%;
+  }
+  table{
+    top: 23%;
+  }
+  .ganhador1{
+    top: 20%;
+    right: 310px;
+    width: 70px;
+    height: 10px;
+  }
+  .ganhador2{
+    top: 20%;
+    left: 300px;
+    width: 70px;
+    height: 10px;
+  }
+  .ganhador3{
+    top: 19%;   
+    left: 160px;
+    width: 70px;
+    height: 10px;
+  }
+	}

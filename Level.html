@@ -3,19 +3,38 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="css/Levelconfig.css"/>
+    <link type="text/css" rel="stylesheet" href="Levelconfig.css"/>
+	<link rel="icon"
+    type="imagem/png"
+    href="nave_pixelart.gif">
 	<title>Escolha um Nível</title>
+	<script>
+		function NIVEL1() {
+		  
+		  document.cookie = 'NIVEL=';
+		  document.cookie = 'NIVEL=1';
+	  }
+	  function NIVEL2() {
+		  
+		  document.cookie = 'NIVEL=';
+		  document.cookie = 'NIVEL=2';
+	  }
+	  function NIVEL3() {
+		  
+		  document.cookie = 'NIVEL=';
+		  document.cookie = 'NIVEL=3';
+	  }
+		  
+	</script>
 </head>
 
 <body>
 	<div class="container">
-		<div class="btn"><a href="pergunta&resposta/css/page.html">Easy</a></div>
-		<div class="btn"><a href="pergunta&resposta/css/page.html" >Medium</a></div>
-	    <div class="btn"><a href="pergunta&resposta/css/page.html">Hard</a></div>
-        <div id="Voltar" class="btn"><img class="img" src="imagens/icons8-go-back.gif"><a href="#"></a></div>
+		<div class="btn"><a href="page.PHP" onclick= NIVEL1() ;>Easy</a></div>
+		<div class="btn"><a href="page.PHP" onclick= NIVEL2() ; >Medium</a></div>
+	    <div class="btn"><a href="page.PHP" onclick= NIVEL3() ;>Hard</a></div>
+        <!-- <div id="Voltar" class="btn"><img class="img" src="icons8-go-back.gif" onclick="location.href='index.html'"></div> -->
 	</div>	
-    
-    <div class="btn" id="Voltar"><img src=""><a href="#" ></a></div>
 	</div>
 </body>
 </html>
