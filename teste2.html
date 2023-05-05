@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Stop setInterval() Call</title>
+</head>
+<body>
+    <p>Press start/stop button to start/stop setInterval() call.</p>
+    <button type="button" id="startBtn">Start</button>
+    <button type="button" id="stopBtn">Stop</button>
+    <div id="myDiv"></div>
+
+    <script>
+    var intervalID;
+
+    // Function to call repeatedly 
+    function sayHello(){
+        document.getElementById("myDiv").innerHTML += '<p>Hello World!</p>';
+    }
+    
+    // Function to start setInterval call
+    function start(){
+        intervalID = setInterval(sayHello, 1000);
+    }
+
+    // Function to stop setInterval call
+    function stop(){
+        clearInterval(intervalID);
+    }
+
+    document.getElementById("startBtn").addEventListener("click", start);
+    document.getElementById("stopBtn").addEventListener("click", stop);
+    </script>
+</body>
+</html>

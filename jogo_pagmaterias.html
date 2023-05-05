@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jogo_pagmaterias.css">
+	<link rel="icon" 	type="image/png" 	href="nave_pixelart.gif">
+	<title>Escolha um Nível</title>
+	<!-- <audio  autoplay loop>
+		<source  src="telainicial.mp3" type="audio/mpeg" >
+    </audio> -->
+
+	<audio id="teste"  src="telainicial.mp3" loop >  </audio>
+
+
+	<script>
+		function execSom() {
+		var audio = document.getElementById("teste");
+		audio.play();
+        audio.volume = 0.1;
+		}
+		
+		function TIPOHTML() {
+		  
+		  document.cookie = 'TIPO=';
+		  document.cookie = 'TIPO=HTML';
+	  }
+	  function TIPOCSS() {
+		  
+		  document.cookie = 'TIPO=';
+		  document.cookie = 'TIPO=CSS';
+	  }
+	  function TIPOJS() {
+		  
+		  document.cookie = 'TIPO=';
+		  document.cookie = 'TIPO=JS';
+	  }
+		  
+	</script>
+</head>
+
+<body onload="execSom();">
+	
+	<div class="container">
+		<div class="btn"><a href="Level.html" onclick= TIPOHTML() ;>HTML</a></div>
+		<div class="btn"><a href="Level.html" onclick= TIPOCSS() ; >CSS</a></div>
+		<div class="btn"><a href="Level.html" onclick= TIPOJS() ;>JAVASCRIPT</a></div>
+
+	</div>
+	<!-- <img src="seta para esquerda.gif" class="img" alt="seta" onclick="location.href='jogo.html'"> -->
+		<div class="texto">
+			Escolha a matéria que deseja:
+		</div>
+	
+</body>

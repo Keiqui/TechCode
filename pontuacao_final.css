@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'fontepixel';
+    src: url(fonte_pixel.TTF);
+  }
+  @font-face {
+    font-family: 'pixelemulator';
+    src: url(Pixel\ Emulator.otf);
+}
+body{
+    position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #050c20 , #355aaa); 
+  height: 100%;
+}
+legend{
+    font-size: 4.2em;
+    font-family: 'fontepixel';
+    color: white;
+    margin-top: -34%;  
+}
+fieldset{
+    height: 200px;
+    width: 250px;
+    margin-top: -4%;
+    position: absolute;
+    border-radius: 3%;
+    border-width:  4px;
+    background: rgb(114, 236, 114);
+    border-color: green;
+    box-shadow: #424858;
+}
+/* .mensagem1{
+    padding-top: 25%;
+    position: absolute;
+    font-family: 'pixelemulator';
+} */
+.mensagem2{
+    padding-top: 25%;
+    position: absolute;
+    font-family: 'pixelemulator';
+}
+.mensagem3{
+    padding-top: 25%;
+    position: absolute;
+    font-family: 'pixelemulator';
+}
+.num_fieldset{
+    font-family: 'pixelemulator';
+    margin-top: -6%;
+    position: absolute;
+    padding-left: 2%;
+    font-size: 140px;
+}
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: p
+}
+button a {
+    color: rgb(8, 78, 8); /* Muda a cor da escrita para amarelo */
+    text-decoration: none;
+  }
+.botao{
+    padding-top: 40%;
+    padding-left: 0%;
+    position: absolute;
+}
+.trofeu{
+    width: 300px;
+    margin-top: -35%;
+    padding-right: 80%;
+    position: absolute;
+}
+
+@media screen and (max-width:720px) {
+	legend{	
+        padding-top: -40%;
+	font-size: 1.8rem;
+    margin-top: -100%;
+    /* position: absolute; */
+    /* padding-left: 100%; */
+		}
+    .mensagem1{
+        padding-top: 50%;
+        font-size: 10px;
+    }
+    .mensagem2{
+        padding-top: 50%;
+        font-size: 10px;
+    }
+    .mensagem3{
+        padding-top: 50%;
+        font-size: 10px;
+
+    }
+    fieldset{
+        width: 140px;
+        height: 110px;
+        margin-top: -20%;
+    }
+    .num_fieldset{
+        position: absolute;
+    padding-left: 2%;
+    font-size: 90px;
+    top: 39%;
+    }
+    .botao{
+        padding-top: 80%;
+    }
+    .trofeu{
+        width: 150px;
+        top: 40%;
+        padding-left: 80%;
+        position: absolute;
+    }
+
+}

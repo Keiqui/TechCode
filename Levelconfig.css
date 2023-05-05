@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
 
+@font-face {
+    font-family: 'pixelemulator';
+    src: url(Pixel\ Emulator.otf);
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -133,11 +137,17 @@ body {
 	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
 		0 0 60px #ff1f71;
 }
-
+.texto{
+	font-size: 20px;
+	font-family: pixelemulator;
+	color: white;
+	margin-top: -30%;
+	position: absolute;
+}
 
 #Voltar{
 	position:fixed;
-	width:4%;
+	width:10%;
 	height:3rem;
 	left:45%;
 	top:85%; 
@@ -148,14 +158,20 @@ body {
 
 .img{
     position: absolute;
-    z-index: 9;
+    z-index:5;
     border-radius: 50%;
     opacity: 9.9;
 }
 
-@media screen and (max-width:6%){
+@media screen and (max-width: 720px) {
     #Voltar{
         width: 6%;
 
     }
+	.texto{
+	    margin-top: -70%;
+		font-size: 14;
+		position: absolute;
+		padding-left: 15px;
+	}
 }

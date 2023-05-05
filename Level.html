@@ -3,19 +3,58 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="css/Levelconfig.css"/>
+    <link type="text/css" rel="stylesheet" href="Levelconfig.css"/>
+	<link rel="icon" 	type="image/png" 	href="nave_pixelart.gif">
 	<title>Escolha um Nível</title>
+	<audio autoplay id="teste"  src="telainicial.mp3" loop>  </audio>
+	<script>
+		var audio = document.getElementById("teste");
+        audio.volume = 0.1;
+		
+		function NIVEL1() {
+		  sessionStorage.setItem('qtdpgt',1);
+		  sessionStorage.setItem('acerto',0);
+		
+		  document.cookie = 'qtdpgt=';
+		  document.cookie = 'qtdpgt=1';
+		  document.cookie = 'NIVEL=';
+		  document.cookie = 'NIVEL=1';
+	  }
+	  function NIVEL2() {
+		  sessionStorage.setItem('qtdpgt',1);
+		  sessionStorage.setItem('acerto',0);
+
+		  document.cookie = 'qtdpgt=';
+		  document.cookie = 'qtdpgt=1';
+		  document.cookie = 'NIVEL=';
+		  document.cookie = 'NIVEL=2';
+	  }
+	  function NIVEL3() {
+		  sessionStorage.setItem('qtdpgt',1);
+		  sessionStorage.setItem('acerto',0);
+		  		  
+		  document.cookie = 'qtdpgt=';
+		  document.cookie = 'qtdpgt=1';
+		  document.cookie = 'NIVEL=';
+		  document.cookie = 'NIVEL=3';
+	  }
+	  
+
+	</script>
 </head>
 
 <body>
 	<div class="container">
-		<div class="btn"><a href="pergunta&resposta/css/page.html">Easy</a></div>
-		<div class="btn"><a href="pergunta&resposta/css/page.html" >Medium</a></div>
-	    <div class="btn"><a href="pergunta&resposta/css/page.html">Hard</a></div>
-        <div id="Voltar" class="btn"><img class="img" src="imagens/icons8-go-back.gif"><a href="#"></a></div>
+		<div class="btn"><a href="page.PHP" onclick= NIVEL1() ;>Fácil</a></div>
+		<div class="btn"><a href="page.PHP" onclick= NIVEL2() ; >Moderado</a></div>
+	    <div class="btn"><a href="page.PHP" onclick= NIVEL3() ;>Difícil</a></div>
+        <!-- <div id="Voltar" class="btn"><img class="img" src="icons8-go-back.gif" onclick="location.href='index.html'"></div> -->
 	</div>	
-    
-    <div class="btn" id="Voltar"><img src=""><a href="#" ></a></div>
 	</div>
+
+    <div class="texto">
+		Escolha o nível de dificuldade que deseja responder:
+	</div>
+
 </body>
 </html>
