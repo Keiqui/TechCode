@@ -187,10 +187,17 @@ input::placeholder{
 
 @media screen and (max-width: 720px) {
 	.nave{ 
+<<<<<<< HEAD
 	  position: absolute;
 	  width: 100px; 
 	  top: 20%;
 	  left: 522px;
+=======
+		width: 100px; 
+	  top: 22%;
+	  
+	  left: 45rem;
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
 	  }
 	legend{
 	top: 200px;	

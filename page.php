@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="page.css"/>
+<<<<<<< HEAD
 
 	<title>Escolha um Nível</title>
  <link rel="icon" 	type="image/png" 	href="nave_pixelart.gif">
@@ -23,11 +24,24 @@
         var qtdacerto = parseInt(Acerto) + 1 ;
         sessionStorage.setItem('acerto',qtdacerto);
         stop(); 
+=======
+	<title>Escolha um Nível</title>
+    <link rel="icon"
+    type="imagem/png"
+    href="nave_pixelart.gif">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	
+	
+	
+	<script>
+    function acerto() {
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
 	Swal.fire(
 		'Resposta certa!',
 		'Parabens !',
 		'success',
 	).then((result) => {
+<<<<<<< HEAD
         if (QTDPGT > 4) {
             document.cookie = 'qtdacertos='+qtdacerto;
             window.location.href = "pontuacao_final.php";
@@ -43,11 +57,22 @@
         var total = parseInt(QTDPGT) + 1 ;
         sessionStorage.setItem('qtdpgt', total );
         stop();
+=======
+  // Reload the Page
+  location.reload();
+});
+	
+
+}
+
+	function ERRO() {
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Preste mais atenção!'
         }).then((result) => {
+<<<<<<< HEAD
         if (QTDPGT > 4) {
             document.cookie = 'qtdacertos='+Acerto;
             window.location.href = "pontuacao_final.php";
@@ -74,12 +99,21 @@ location.reload();
 
 
 </script>
+=======
+  // Reload the Page
+  location.reload();
+});
+    }
+
+    </script>
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
 
 	
 	
 </head>
 <body>
 
+<<<<<<< HEAD
 <!-- contador Tempo -->
 <h1 id="counterarea"></h1>
 
@@ -114,6 +148,10 @@ function stop(){
 
 
 
+=======
+<div class='coluna-esquerda'></div>   
+<div class="coluna-direita">PERGUNTA</div>
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
 <?php    
 include("config.php");
 $DADOS = $_COOKIE;
@@ -129,6 +167,7 @@ $sql3 = "SELECT * FROM questoes where questoes.nivel = '".$DADOS['NIVEL']."' AND
 $res3 = $conn->query($sql3);
 $row3 = $res3->fetch_object();
 
+<<<<<<< HEAD
 $qtdperg = 1;
 $agora = rand(1,3);
 ?>
@@ -204,6 +243,29 @@ $agora = rand(1,3);
 
  }
 
+=======
+
+ print "<div class='pergunta'>".$row->pergunta."</div>" ;  
+ print" <div class='container'> ";
+ print" <div class='btn'  onclick= acerto() id='mensagem-sucesso'  ; ><a href='#'>A</a></div>";
+ 
+ 
+ print" <div class='btn'  onclick= ERRO(); ><a href='#'>B</a></div>";
+
+ 
+
+ print" <div class='btn'  onclick= ERRO(); ><a href='#'>C</a></div>";
+ 
+ print"	</div>	";
+
+ print"<div class='pergunta' id='respa'>A)".$row->resposta." </p>" ; 
+ print"<div class='pergunta' id='respb'>B)".$row2->resposta."</p>" ;
+ print"<div class='pergunta' id='respc'>C)".$row3->resposta."</p>" ;  
+ 
+
+
+
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
  //  print"		<div class='btn'><a href='#' >B</a></div>";
 //  print"	    <div class='btn'><a href='#'>C</a></div>";
 //  print"        <div class='btn'><a href='#'>D</a></div>"; 

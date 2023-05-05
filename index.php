@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jogo.css">
+<<<<<<< HEAD
     <link rel="icon" 	type="image/png" 	href="nave_pixelart.gif">
     <title>TechCode, sua inteligência em jogo</title>
     <!-- <audio src="telainicial.mp3" autoplay loop></audio> -->
@@ -30,6 +31,19 @@
         }else{
           document.cookie = 'NOME='+nome; 
         }
+=======
+    <link rel="icon"
+    type="imagem/png"
+    href="nave_pixelart.gif">
+    <title>TechCode</title>
+
+    <script>
+      function SALVARNOME() {
+        var nome = document.getElementById("meu-submit").value ;
+        
+        document.cookie = 'NOME=';
+        document.cookie = 'NOME='+nome;
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
 }
 
 
@@ -42,9 +56,12 @@
     </script>
 
   </head> 
+<<<<<<< HEAD
 
     
 
+=======
+>>>>>>> 500410af3052fca07ab3e4c0e477878f3e604c34
   <legend>TechCode</legend>
     <style>
       /* Definir o tamanho do vídeo para ocupar toda a tela */
